@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar - Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="hiddden">
+    <!-- Navbar -->
+    <nav class="bg-[#190e00] shadow-md">
+      <div
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo (Left Side) -->
+        <a href="#" class="text-2xl font-bold text-blue-600">
+            <img src="./assects/_log_nb 1.png" alt="">
+        </a>
+
+        <!-- Navigation Links (Center) -->
+        <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <li><a href="#" class="text-white hover:text-blue-500">Home</a></li>
+          <li><a href="#" class="text-white hover:text-blue-500">About</a></li>
+          <li>
+            <a href="#" class="text-white hover:text-blue-500">Roadmap</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-blue-500">Tokenomics</a>
+          </li>
+        </ul>
+
+        <!-- Buy Button (Right Side) -->
+        <a
+          href="#"
+          class="hidden md:block px-6 py-2 bg-[#d9aa63] text-black rounded-lg font-semibold hover:bg-blue-700 hover:text-white"
+        >
+          Buy Now
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            class="w-8 h-8 text-gray-700"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6">
+        <ul class="space-y-4 text-gray-700 font-medium">
+          <li><a href="#" class="block hover:text-blue-500">Home</a></li>
+          <li><a href="#" class="block hover:text-blue-500">About</a></li>
+          <li><a href="#" class="block hover:text-blue-500">Roadmap</a></li>
+          <li><a href="#" class="block hover:text-blue-500">Tokenomics</a></li>
+          <li>
+            <a
+              href="#"
+              class="block mt-2 px-6 py-2 bg-[#D09742] text-white rounded-lg font-semibold hover:bg-blue-700 hover:text-white"
+            >
+              Buy Now
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- her0 section start -->
+
+    <section class="main-img max-[768px]:h-auto max-[768px]:pb-20
+   ">
+      <div class="w-4/5 mx-auto">
+        <div class="pt-20">
+          <img src="./assects/_bitegg.png" alt="" />
+        </div>
+        <h2
+          class="w-[815px] h-[122px] text-[72px] font-[400] leading-[72px] text-white max-[768px]:w-auto max-[768px]:text-[50px] max-[600px]:text-[40px] max-[600px]:leading-[40px] max-[600px]:pt-[10px] max-[440px]:text-[30px] "
+        >
+          The Golden Standard of Digital Assets.
+        </h2>
+        <p
+          class="w-[815px] h-[39px] text-[20px] font-[400] leading-[25px] text-white py-[55px] max-[768px]:w-auto max-[768px]:w-auto  max-[600px]:leading-[25px]  max-[600px]:py-[5px]  "
+        >
+          We’ve hatched a unique digital asset to create the ultimate nest egg.
+          An opportunity designed to grow over time, ensuring your investment
+          doesn’t crack under pressure.
+        </p>
+        <div class="mt-10 max-[768px]:mt-[60px] max-[600px]:mt-[95px] max-[480px]:mt-[135px] ">
+          <a
+            href="#"
+            class="mt-2 px-6 py-2 bg-[#D09742] text-white rounded-lg font-semibold hover:bg-blue-700 hover:text-white"
+          >
+            Buy Now
+          </a>
+          <a
+            href="#"
+            class="mt-2 px-6 py-2 bg-transparent ms-10 border border-[#D09742] text-[#D09742] rounded-lg font-semibold hover:bg-blue-700 hover:text-white"
+          >
+            learn more
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <section class="bg-[#190e00] ">
+      
+
+      <div class="w-[90%] mx-auto flex justify-between  max-[768px]:flex-col max-[768px]:items-center
+      ">
+        <div class="w-[40%] pt-[110px] max-[768px]:order-last ">
+          <img width="90%" src="./assects/_log_nb 2 (1).png" alt="" />
+        </div>
+        <div class="w-[60%] ps-[10px] max-[768px]:w-[100%] ">
+            <div class="w-80">
+                <img src="./assects/_about.png" alt="" />
+              </div>
+              <h3 class="text-[#d89f4a] text-[40px] max-[768px]:text-[20px]">
+                The Story Behind the Golden Egg
+              </h3>
+          <h4 class="text-[#d89f4a] text-[24px] mt-[10px] max-[768px]:text-[22px]">BitEgg: Turning Scrambled Markets into Golden Opportunity</h4>
+          <p class="text-white text-[18px] leading-[25px]">
+            When the price of everyday eggs skyrocketed—turning a humble staple
+            into an unexpected luxury—it felt like the world had been flipped
+            sunny-side up. Grocery aisles were empty, and social media buzzed
+            about the irony of needing a small fortune just for a simple omelet.
+            Yet, amidst all the chaos and confusion, an idea quietly hatched.
+          </p>
+          <br>
+          <p class="text-white text-[18px] leading-[25px]">
+            If real eggs could suddenly become prized possessions, why not
+            create a digital asset designed to stay valuable—no matter what
+            happens in the market? That’s where BitEgg comes in. Inspired by the
+            surge in demand for something so ordinary, we combined the enduring
+            shine of gold with the ingenuity of blockchain to craft a token
+            meant to be a true nest egg.
+          </p>
+<br>
+          <p class="text-white text-[18px] leading-[25px]">
+            BitEgg isn’t just another novelty coin; it’s a statement that even
+            in the most unexpected times, opportunity can flourish. By merging
+            comedic charm with serious longevity, BitEgg promises the best of
+            both worlds: a playful nod to the Great Egg Price Crisis and a
+            calculated approach to building real, lasting worth. It’s an
+            invitation to join a community that knows how to laugh at life’s
+            quirks—while staying focused on the bigger picture of future
+            prosperity.
+          </p>
+          <br>
+          <p class="text-white text-[18px] leading-[25px]">
+            Because if a simple carton of eggs can spark a
+            nationwide scramble, imagine what a carefully designed digital
+            asset—born from that very moment—can do for your portfolio. With
+            BitEgg, you’re not just cracking into the crypto scene; you’re
+            investing in a story of resilience and possibility. And that, in our
+            book, is something worth holding onto.
+          </p>
+        </div>
+      </div>
+      <!-- tokemomics -->
+     <section class="w-[80%] mx-auto pt-20">
+        <!-- <div class="w-[30%] absolute left-[1000px] ">
+            <img src="./assects/shape.png" alt="">
+        </div> -->
+        <div class="w-[30%] max-[768px]:w-[60%] max-[500px]:w-[80%]">
+            <img width="100%" src="./assects/_about (1).png" alt="">
+        </div>
+        <h2 class="text-[#d89f4a] text-[40px] pb-5 max-[768px]:text-[23px]">Understanding Bitegg's Value</h2>
+        <div class="max-[768px]:w-[100%]">
+            <img src="./assects/_all.png" alt="">
+        </div>
+        <div class="w-[60%] pt-20 max-[768px]:w-[80%] ">
+            <img width="100%" src="./assects/_chart.png" alt="">
+        </div>
+     </section>
+     <!-- roadmap -->
+      <section>
+        <div class="w-[30%] mx-auto pt-20 max-[768px]:w-[60%] max-[500px]:w-[80%]">
+            <img width="100%" src="./assects/_about (2).png" alt="">
+        </div>
+        <h2 class="text-[#d89f4a] text-[40px] pb-5 text-center">Our Path to the Future</h2>
+        <div class="w-[80%] mx-auto">
+            <img width="100%" src="./assects/_cont.png" alt="">
+        </div>
+      </section>
+      <!-- footer -->
+       <section class="bg-[#b78334]">
+        <div class="w-[30%] mx-auto pt-20 max-[768px]:w-[60%] max-[500px]:w-[80%]">
+            <img width="100%" src="./assects/_head.png" alt="">
+        </div>
+        <h2 class="text-black text-[40px] pb-5 text-center font-[700] max-[600px]:text-[23px] ">Understanding Bitegg's Value</h2>
+        <div class="flex justify-center items-center py-10">
+            <img src="./assects/Social Icons.png" alt="">
+            <img class="mx-5" src="./assects/_discord.png" alt="">
+            <img src="./assects/_discord (2).png" alt="">
+        </div>
+       </section>
+       <div>
+        <div>
+          <img src="./assects/_footer.png" alt="">
+        </div>
+       </div>
+    </section>
+    
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
